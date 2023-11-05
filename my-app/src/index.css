@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=YourFont1&family=YourFont2&display=swap');
+
+
 body{
-  background-color: #bfb8da;
+  background-image: linear-gradient(to left top, #cb4f0e, #bc3f18, #ac2f1e, #9b2021, #891222);  /* From https://css.glass */
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(87, 6, 6, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .bot-collection{
   display: flex;
@@ -9,13 +17,25 @@ body{
   justify-content: center;
 }
 .bot-card{
-  background-color: #21283223;
+  background-color: #c3c8ce23;
+
+  /* From https://css.glass */
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 20px 70px;
   text-align: center;
 }
 .bot-card h3{
   font-size: 30px;
-  color: rgb(72, 72, 177);
+  color: whitesmoke;
+  letter-spacing: 2rem;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px 10px;
+  background-color: black;
 }
 .bot-card button{
   width: 80%;

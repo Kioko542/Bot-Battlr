@@ -35,8 +35,7 @@ The core deliverables of the "Your Bot Army" project include the following featu
 - View profiles of all available bots in `BotCollection`.
 - Add an individual bot to your army by clicking on it (bots can be enlisted only once).
 - Release a bot from your army by clicking on it.
-- Discharge a bot from service forever by clicking the red "x" button (deletes the bot from both the backend and your army).
-
+- Discharge a bot from service forever 
 ## Folder Structure
 
 The project structure includes the following main directories and files:

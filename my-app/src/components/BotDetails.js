@@ -1,5 +1,4 @@
 import React from "react";
-import BotCard from "./BotCard";
 
 // Destructuring the props from the BotsPage component
 const BotDetails = ({ bot, clearSpec, addBot }) => {
@@ -10,11 +9,12 @@ const BotDetails = ({ bot, clearSpec, addBot }) => {
 
   return (
     
-    <div >
+    <div className="card" >
         
          <div>   
             <img         
               src={bot.avatar_url}
+              alt="avatar"
             />
           </div>
 

@@ -3,21 +3,13 @@ import React from "react";
 const BotCard = props => {
   const { bot } = props;
 
-  let botType;
+  const botTypeIcons = {
+    Assault: <i className="icon military" />,
+    Defender: <i className="icon shield" />,
+    Support: <i className="icon ambulance" />,
+  };
 
-  switch (bot.bot_class) {
-    case "Assault":
-      botType = <i className="icon military" />;
-      break;
-    case "Defender":
-      botType = <i className="icon shield" />;
-      break;
-    case "Support":
-      botType = <i className="icon ambulance" />;
-      break;
-    default:
-      botType = <div />;
-  }
+  const botType = botTypeIcons[bot.bot_class] || <div />;
 
   return (
     <div className="ui column">
@@ -56,7 +48,6 @@ const BotCard = props => {
       </div>
     </div>
   );
-
 };
 
 export default BotCard;

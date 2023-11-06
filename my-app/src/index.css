@@ -12,11 +12,11 @@ body {
   flex-wrap: wrap;
   cursor: pointer;
   gap: 50px;
-  font-family: ;
+  font-family:Roboto ;
 }
 .btn{
   background-color: black;
-  padding: 30px 50px;
+  padding: 20px 50px;
   margin-right: 20px;
   border: none;
   color: orange;

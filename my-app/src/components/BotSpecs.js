@@ -1,72 +1,24 @@
-import React from "react";
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
-const BotSpecs = props => {
-  const { bot } = props;
+function BotSpecs({ bots, enlistBot }) {
+  const { id } = useParams();
+  const bot = bots.find((b) => b.id === parseInt(id));
 
-  const botTypeIcons = {
-    Assault: <i className="icon large circular military" />,
-    Defender: <i className="icon large circular shield" />,
-    Support: <i className="icon large circular ambulance" />,
-  };
-
-  const botType = botTypeIcons[bot.bot_class] || <div />;
+  if (!bot) {
+    return <div>Bot not found.</div>;
+  }
 
   return (
-    <div className="ui segment">
-      <div className="ui two column centered grid">
-        <div className="row">
-          <div className="four wide column">
-            <img
-              alt="oh no!"
-              className="ui medium circular image bordered"
-              src={bot.avatar_url}
-            />
-          </div>
-          <div className="four wide column">
-            <h2>Name: {bot.name}</h2>
-            <p>
-              <strong>Catchphrase: </strong>
-              {bot.catchphrase}
-            </p>
-            <strong>
-              Class: {bot.bot_class} {botType}
-            </strong>
-            <br />
-            <div className="ui segment">
-              <div className="ui three column centered grid">
-                <div className="row">
-                  <div className="column">
-                    <i className="icon large circular red heartbeat" />
-                    <strong>{bot.health}</strong>
-                  </div>
-                  <div className="column">
-                    <i className="icon large circular yellow lightning" />
-                    <strong>{bot.damage}</strong>
-                  </div>
-                  <div className="column">
-                    <i className="icon large circular blue shield" />
-                    <strong>{bot.armor}</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button
-              className="ui button fluid"
-              onClick={() => props.clearSpec()}
-            >
-              Go Back
-            </button>
-            <button
-              className="ui button fluid"
-              onClick={() => props.addBot(bot)}
-            >
-              {bot.owned ? "Remove From Army" : "Enlist"}
-            </button>
-          </div>
-        </div>
-      </div>
+    <div>
+      <h2>Bot Specifications</h2>
+      <p>Name: {bot.name}</p>
+      <p>Health: {bot.health}</p>
+      <p>Damage: {bot.damage}</p>
+      <p>Armor: {bot.armor}</p>
+      <button onClick={() => enlistBot(bot)}>Enlist</button>
     </div>
   );
-};
+}
 
 export default BotSpecs;

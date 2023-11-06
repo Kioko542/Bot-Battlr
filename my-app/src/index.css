@@ -1,5 +1,25 @@
-  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Commissioner:wght@100;200;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,500;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,700&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,400&family=Ysabeau+Office:ital,wght@0,1;0,400;1,100&family=Zeyada&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Commissioner:wght@100;200;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,500;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,700&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,400&family=Ysabeau+Office:ital,wght@0,1;0,400;1,100&family=Zeyada&display=swap");
 
-body{
-  background-color:red;
+body {
+  background-color: rgba(255, 0, 0, 0.212);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  gap: 50px;
+  font-family: ;
+}
+.btn{
+  background-color: black;
+  padding: 30px 50px;
+  margin-right: 20px;
+  border: none;
+  color: orange;
+  border-radius: 50px;
+  text-transform: uppercase;
 }

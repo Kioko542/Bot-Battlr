@@ -10,7 +10,7 @@ function MyArmy({ bots, addBot }) {
 
   return (
     
-     <div >   
+     <div  >   
          <h2>Your Bot Army  </h2>
           {renderBots()}
      </div>

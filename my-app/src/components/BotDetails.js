@@ -9,7 +9,7 @@ const BotDetails = ({ bot, clearSpec, addBot }) => {
 
   return (
     
-    <div className="card" >
+    <div  >
         
          <div>   
             <img         
@@ -20,11 +20,11 @@ const BotDetails = ({ bot, clearSpec, addBot }) => {
 
           {/* Data of the bot cards */}
 
-        <div>
+        <div className="card-bod" >
             <h2>Name: {bot.name}</h2>
         
             <p>Catchphrase:{bot.catchphrase}</p>
-            
+            <p>health:{bot.health}</p>
             <p>Class: {bot.bot_class}</p> 
          </div >
             
@@ -47,11 +47,11 @@ const BotDetails = ({ bot, clearSpec, addBot }) => {
                    
                  
             {/* buttons */}
-            <button  onClick={clearSpec}>
+            <button className="btn" onClick={clearSpec}>
               Go Back
             </button>
 
-            <button  onClick={handleAddBot}>
+            <button className="btn" onClick={handleAddBot}>
               {bot.owned ? "Remove From Army" : "Enlist"}
             </button>
     

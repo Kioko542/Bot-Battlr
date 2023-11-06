@@ -10,7 +10,7 @@ function BotList(props) {
       };
 
     return (
-      <div> 
+      <div className="card"> 
           {loadBots()} 
       </div>
     );

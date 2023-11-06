@@ -37,7 +37,7 @@ function BotsPage() {
   };
 
   return (
-    <div className="bo">
+    <div  >
       <YourBotArmy bots={allBots.filter(bot => bot.owned)} addBot={clickBot} />
       <br />
       {selectBot ?
